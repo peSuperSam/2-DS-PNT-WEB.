@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- A tag <html> é a raiz do nosso documento HTML -->
+<html lang="pt-BR">
+
+<!-- A tag <head> contém as configurações da página (metadados), como o título da aba e a codificação de caracteres -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Aluno - Aula 03</title>
+</head>
+
+<!-- A tag <body> contém todo o conteúdo visível da página -->
+<body>
+
+    <!-- ========================================================================== -->
+    <!-- AULA 03: JUNÇÃO DA AULA 01 + AULA 02 + NOVO CONTEÚDO                       -->
+    <!-- Nesta aula, mantemos a base criada na aula 01, preservamos os acréscimos    -->
+    <!-- da aula 02 e adicionamos uma nova parte com formulário HTML.                -->
+    <!-- ========================================================================== -->
+
+    <!-- ============================ BASE DA AULA 01 ============================== -->
+
+    <!-- A tag <h1> é o título principal, o mais importante da página. Ideal para o nome -->
+    <h1>João da Silva</h1>
+
+    <!-- A tag <p> representa um parágrafo, usada para textos contínuos -->
+    <!-- Aqui o texto já aparece com a melhoria da aula 02 usando <strong> e <em> -->
+    <p>Estudante de <strong>Desenvolvimento de Sistemas</strong>, <em>apaixonado</em> por criar soluções para a web.</p>
+
+    <!-- ========================== ACRÉSCIMOS DA AULA 02 ========================== -->
+
+    <!-- A tag <img> insere uma imagem. O atributo 'src' recebe o link da imagem -->
+    <!-- O atributo 'alt' é o texto alternativo, importante para acessibilidade -->
+    <img src="https://via.placeholder.com/150" alt="Foto de perfil do aluno">
+
+    <!-- A tag <hr> cria uma linha horizontal para separar seções da página -->
+    <hr>
+
+    <!-- A tag <h2> cria um subtítulo, menor que o <h1> -->
+    <h2>Minhas Habilidades</h2>
+
+    <!-- A tag <ul> cria uma lista não ordenada, com marcadores -->
+    <ul>
+        <!-- Cada <li> é um item da lista -->
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <!-- Outro subtítulo para organizar melhor as informações -->
+    <h2>Meus Objetivos</h2>
+
+    <!-- A tag <ol> cria uma lista ordenada, ou seja, numerada -->
+    <ol>
+        <li>Construir meu primeiro site completo</li>
+        <li>Aprender a estilizar páginas com CSS</li>
+        <li>Conseguir minha primeira oportunidade na área tech</li>
+    </ol>
+
+    <hr>
+
+    <!-- ============================ NOVO: AULA 03 ================================ -->
+
+    <!-- Agora vamos além de mostrar informações: vamos criar um formulário -->
+    <!-- para cadastrar os dados do aluno na própria página -->
+    <h2>Cadastro do Aluno</h2>
+
+    <!-- A tag <form> agrupa todos os campos do formulário -->
+    <form>
+
+        <!-- A tag <label> identifica o campo para o usuário -->
+        <!-- A tag <input> cria um campo para digitação -->
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome">
+
+        <br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email">
+
+        <br><br>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade">
+
+        <br><br>
+
+        <!-- O tipo "date" permite selecionar uma data -->
+        <label for="nascimento">Data de nascimento:</label>
+        <input type="date" id="nascimento" name="nascimento">
+
+        <br><br>
+
+        <!-- A tag <select> cria uma lista de opções -->
+        <label for="turma">Turma:</label>
+        <select id="turma" name="turma">
+            <option value="">Selecione uma turma</option>
+            <option value="1ds">1DS</option>
+            <option value="2ds">2DS</option>
+            <option value="3ds">3DS</option>
+        </select>
+
+        <br><br>
+
+        <!-- A tag <textarea> cria um campo maior para textos longos -->
+        <label for="sobre">Fale um pouco sobre você:</label>
+        <br>
+        <textarea id="sobre" name="sobre" rows="5" cols="40"></textarea>
+
+        <br><br>
+
+        <!-- A tag <button> cria um botão. Aqui usamos para enviar o formulário -->
+        <button type="submit">Enviar cadastro</button>
+    </form>
+
+    <hr>
+
+    <!-- A tag <a> cria um link (âncora). O atributo 'href' indica o endereço de destino -->
+    <!-- O target="_blank" faz o link abrir em uma nova aba -->
+    <a href="https://github.com/joaosilva" target="_blank">Meu GitHub</a>
+
+</body>
+</html>
